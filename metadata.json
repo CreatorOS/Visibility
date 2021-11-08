@@ -5,7 +5,19 @@
   "setupCommands": ["npm i", "npx hardhat compile"],
   "compileCommand": "npx hardhat compile",
   "tests": [
-    { "itShould": "Compile", "command": "sh learn_tests/62.sh" }
+    { "itShould": "Compile", "command": "sh learn_tests/62.sh" },
+    {
+      "itShould": "Call privateFunc from BaseVisibility contract",
+      "command": "sh learn_tests/2.sh"
+    },
+    {
+      "itShould": "Call privateFunc from ChildVisibility contract",
+      "command": "sh learn_tests/3.sh"
+    },
+    {
+      "itShould": "Call internalFunc from ChildVisibility contract",
+      "command": "sh learn_tests/4.sh"
+    }
   ],
   "learnerAccessibleFileList": ["contracts/*"]
 }
