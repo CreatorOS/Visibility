@@ -2,10 +2,15 @@
   "version": "1.0.0",
   "defaultFile": "contracts/Visibility.sol",
   "environment": "solidity",
-  "setupCommands": ["npm i", "npx hardhat compile"],
+  "setupCommands": [
+    "npx hardhat compile"
+  ],
   "compileCommand": "npx hardhat compile",
   "tests": [
-    { "itShould": "Compile", "command": "sh learn_tests/62.sh" },
+    {
+      "itShould": "Compile",
+      "command": "sh learn_tests/62.sh"
+    },
     {
       "itShould": "Call privateFunc from BaseVisibility contract",
       "command": "sh learn_tests/2.sh"
@@ -19,5 +24,7 @@
       "command": "sh learn_tests/4.sh"
     }
   ],
-  "learnerAccessibleFileList": ["contracts/*"]
+  "learnerAccessibleFileList": [
+    "contracts/*"
+  ]
 }
